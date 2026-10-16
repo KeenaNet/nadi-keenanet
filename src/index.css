@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #050B14;
+    --navy-deep: #07111F;
+    --graphite: #1C2533;
+    --cyan-glow: #00D9FF;
+    --blue-neon: #1677FF;
+    --silver: #A7BBCB;
+  }
+
+  body {
+    background-color: #050B14;
+    color: #A7BBCB;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+  }
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars for command logs and detail panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(7, 17, 31, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: #1C2533;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D9FF;
+}
+
+/* Sci-Fi HUD Corner Borders */
+.hud-corner-tl {
+  position: relative;
+}
+.hud-corner-tl::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00D9FF;
+  border-left: 2px solid #00D9FF;
+  pointer-events: none;
+}
+.hud-corner-tr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00D9FF;
+  border-right: 2px solid #00D9FF;
+  pointer-events: none;
+}
+.hud-corner-br::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00D9FF;
+  border-right: 2px solid #00D9FF;
+  pointer-events: none;
+}
+.hud-corner-bl::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00D9FF;
+  border-left: 2px solid #00D9FF;
+  pointer-events: none;
+}

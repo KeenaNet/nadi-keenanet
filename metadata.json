@@ -1,0 +1,8 @@
+{
+  "name": "NADI — The Intelligence Core of KeenaNet",
+  "description": "Interactive 3D Sci-Fi Experience featuring NADI, the masculine humanoid AI Co-Pilot, neural intelligence core, and engineering guardian of the KeenaNet ecosystem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
